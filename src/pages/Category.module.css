@@ -1,0 +1,23 @@
+.container {
+    width: 80%;
+    height: 100%;
+  }
+  
+.content {
+height: 100%;
+margin: 10px;
+text-align: center;
+padding: 20px 10px;
+border-radius: 10px;
+background-color: #fff;
+}
+  
+.content button {
+    background: #2b52e2;
+    color: white;
+    margin-top: 20px;
+    padding: 10px 20px;
+    box-shadow: none;
+    border: none;
+    cursor: pointer;
+}

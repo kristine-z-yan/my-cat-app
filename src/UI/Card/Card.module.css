@@ -1,0 +1,14 @@
+.card {
+    display: inline-block;
+    width: 30%;
+    margin: 10px ;
+    background-color: aliceblue;
+    border-radius: 5px;
+    height: 280px;
+}
+
+.card img {
+    height: inherit;
+    object-fit: cover;
+    width: 100%;
+}

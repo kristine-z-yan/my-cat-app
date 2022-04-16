@@ -1,0 +1,104 @@
+.App {
+  display: flex;
+  justify-content: space-around;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: aliceblue;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.navbar {
+  width: 20%;
+}
+
+.toggle-button {
+  display: none;
+}
+
+
+#check {
+  display: none;
+}
+label #btn,
+label #cancel {
+  position: absolute;
+  background: #042331;
+  border-radius: 3px;
+  cursor: pointer;
+}
+label #btn {
+  left: 40px;
+  top: 25px;
+  font-size: 1px;
+  color: #042331;
+  padding: 6px 12px;
+  transition: all 0.5s;
+}
+label #cancel {
+  z-index: 1111;
+  left: -195px;
+  top: 17px;
+  font-size: 30px;
+  color: #0a5275;
+  padding: 4px 9px;
+  transition: all 0.5s ease;
+}
+#check:checked ~ .sidebar {
+  left: 0;
+}
+#check:checked ~ label #btn {
+  left: 250px;
+  opacity: 0;
+  pointer-events: none;
+}
+#check:checked ~ label #cancel {
+  left: 195px;
+}
+#check:checked ~ section {
+  margin-left: 250px;
+}
+
+@media screen and (max-width: 1330px) {
+  .nav {
+    width: 10%;
+  }
+  
+  .container {
+      width: 90%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .nav {
+    width: 15%;
+  }
+
+  .container {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .nav {
+    width: 15%;
+  }
+
+.toggle-button {
+  display: inline-block;
+}
+
+  .container {
+    width: 85%;
+  }
+}
